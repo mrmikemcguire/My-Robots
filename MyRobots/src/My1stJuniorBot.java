@@ -24,12 +24,13 @@ public class My1stJuniorBot extends JuniorRobot
 		turnAheadLeft(100, 90 - hitByBulletBearing);
 		}
 	
+	//use hitWallBearing instead of this
 	public void onHitWall()
 		{
 		back(500);
-		turnAheadRight(500, 90);
-		ahead(500);
-		turnBackRight(500, 90);
+		turnAheadRight(200, 180 - hitWallBearing);
+		//ahead(500);
+		//turnBackRight(200, 180 + hitWallBearing);
 		}
 	}
 	
