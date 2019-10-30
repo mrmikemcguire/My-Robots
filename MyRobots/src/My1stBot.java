@@ -1,14 +1,14 @@
 import robocode.Robot;
 import robocode.ScannedRobotEvent;
 
-public class MyFirstBot extends Robot
+public class My1stBot extends Robot
 	{
 	public void run()
 		{
 		while(true) 
 			{
 		    ahead(100);
-		    turnGunRight(360);
+		    turnGunLeft(360);
 		    back(100);
 		    turnGunRight(360);
 			}
