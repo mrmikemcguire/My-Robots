@@ -9,7 +9,7 @@ public class My1stBot extends Robot
 			{
 		    ahead(100);
 		    turnGunLeft(360);
-		    back(100);
+		    back(50);
 		    turnGunRight(360);
 			}
 		}
