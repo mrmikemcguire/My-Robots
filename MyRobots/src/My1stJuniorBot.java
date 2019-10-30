@@ -16,12 +16,20 @@ public class My1stJuniorBot extends JuniorRobot
 	public void onScannedRobot() 
 		{
 		turnGunTo(scannedAngle);
-		fire(1);
+		fire(3);
 		}
 
 	public void onHitByBullet() 
 		{
 		turnAheadLeft(100, 90 - hitByBulletBearing);
+		}
+	
+	public void onHitWall()
+		{
+		back(500);
+		turnAheadRight(500, 90);
+		ahead(500);
+		turnBackRight(500, 90);
 		}
 	}
 	
